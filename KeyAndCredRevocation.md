@@ -1,8 +1,11 @@
-+++ Key validity
+### Key authenticity and validity
 
-The key is the key:  It's all about the authenticity and validity of the issuing key.
+The key is the key. It's all about:
 
-ALWAYS NEED SOME ASSERTION, at the time of verification, THAT THE ISSUING KEY IS AUTHENTIC AND WAS VALID AT TIME OF ISSUANCE, i.e.
+- the ***authenticity*** of the signing/issuing key (the key is owned by McMaster University)
+- the ***validity*** of the signing/issuing key (the key was valid when the credential was issued).
+
+We always need some assertion, at the time of verification, that the issuing key is authentic and was valid at time of issuance, i.e.
 was being legitimately used within a period that encompasses the issuance of the given cred, and wasn't subsequently revoked for that period.
 So this could be a date range for the key, as simple as list of pairs like:
 
@@ -33,7 +36,5 @@ BUT THE UPSIDE IS THAT BECAUSE WE CONTROL THAT STORAGE, WE CAN DELETE HASHES (WH
 IT IS THAT WE RECORD POSITIVE CERTS INDIRECTLY IN A BLOCKCHAIN, USING TIMESTAMP AND KEY LIST.  BUT WITH NO REAL GAIN BECAUSE
 WE ALWAYS NEED THE CORRESPONDING NEGATIVE LIST.
 
-One argument is monitoring.  If we have a central list, then any access to the list can be monitored.  But, would it really show
-anything meaninful, if people take copies of the list, and find the entry in which they are interested themselves?  
+One argument is monitoring.  If we have a central list, then any access to the list can be monitored.  But, would it really show anything meaninful, if people take copies of the list, and find the entry in which they are interested themselves?  And, furthermore, are really doing anything different than what happens with a blockchain?  
 
-+++ Permanent secure versioning of updatable revocation list
